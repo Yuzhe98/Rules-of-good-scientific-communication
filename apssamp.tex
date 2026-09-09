@@ -1,0 +1,116 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%   Version 4.2a of REVTeX, December 2014
+%
+%   Copyright (c) 2014 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.2
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+
+\usepackage{enumitem,amssymb}
+\newlist{checklist}{itemize}{2}
+\setlist[checklist]{label=$\square$}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+\hspace{-2.5pt}}
+\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+
+\usepackage{xcolor}
+\newcommand{\DB}[1]{\textcolor{blue}{Dima: #1}}
+\newcommand{\YZ}[1]{\textcolor{purple}{Yuzhe: #1}}
+\newcommand{\Copilot}[1]{\textcolor{brown}{Copilot: #1}}
+
+\usepackage{ulem}
+
+\begin{document}
+
+\preprint{APS/123-QED}
+
+\title{Rules of good scientific communication}
+
+\author{Yuzhe Zhang}
+\email{yuhzhang@uni-mainz.de}
+\affiliation{Johannes Gutenberg-Universit{\"a}t Mainz, 55128 Mainz, Germany}
+\affiliation{Helmholtz Institute Mainz, 55099 Mainz, Germany}
+\affiliation{GSI Helmholtzzentrum für Schwerionenforschung GmbH, 64291 Darmstadt, Germany}
+
+
+\author{Dmitry Budker}
+\email{budker@uni-mainz.de}
+\affiliation{Johannes Gutenberg-Universit{\"a}t Mainz, 55128 Mainz, Germany}
+\affiliation{Helmholtz Institute Mainz, 55099 Mainz, Germany}
+\affiliation{GSI Helmholtzzentrum für Schwerionenforschung GmbH, 64291 Darmstadt, Germany}
+\affiliation{Department of Physics, University of California, Berkeley, CA 94720-7300, United States of America}
+
+
+\date{September 9, 2026}
+
+\begin{abstract}
+
+
+
+\end{abstract}
+
+
+\maketitle
+
+
+\section{Introduction}
+
+Presentation is different from writing, but viewgraphs for the presentation still have to comply with general rules in scientific writing, some of which can be found in Ref.\,\cite{budker2008rules}. 
+We do not repeat those rules here. 
+
+\section{The rules}
+
+
+\section{Concluding remarks}
+
+
+\begin{acknowledgments}
+
+\end{acknowledgments}
+
+\bibliography{apssamp.bib}% Produces the bibliography via BibTeX.
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******
