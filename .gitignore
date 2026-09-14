@@ -1,0 +1,29 @@
+# LaTeX build outputs
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.pdf
+*.xdv
+
+# BibTeX / generated metadata
+*.bbl
+*.blg
+mainNotes.bib
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Temporary files
+*~
+*.swp
+*.tmp
