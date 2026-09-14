@@ -1,0 +1,151 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%   Version 4.2a of REVTeX, December 2014
+%
+%   Copyright (c) 2014 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.2
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+%superscriptaddress,
+groupedaddress,
+%unsortedaddress,
+% runinaddress,
+%frontmatterverbose, 
+% preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+% pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+
+\usepackage{enumitem,amssymb}
+\newlist{checklist}{itemize}{2}
+\setlist[checklist]{label=$\square$}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+\hspace{-2.5pt}}
+\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+
+\usepackage{xcolor}
+\newcommand{\DB}[1]{\textcolor{blue}{Dima: #1}}
+\newcommand{\YZ}[1]{\textcolor{purple}{Yuzhe: #1}}
+\newcommand{\Copilot}[1]{\textcolor{brown}{Copilot: #1}}
+
+\usepackage{ulem}
+
+\begin{document}
+
+\preprint{APS/123-QED}
+
+\title{Five Rules of Good Scientific Communication}
+
+\author{Yuzhe Zhang}
+\email{yuhzhang@uni-mainz.de}
+\affiliation{Johannes Gutenberg-Universit{\"a}t Mainz, 55128 Mainz, Germany}
+\affiliation{Helmholtz Institute Mainz, 55099 Mainz, Germany}
+\affiliation{GSI Helmholtzzentrum für Schwerionenforschung GmbH, 64291 Darmstadt, Germany}
+
+
+\author{Dmitry Budker}
+\email{budker@uni-mainz.de}
+\affiliation{Johannes Gutenberg-Universit{\"a}t Mainz, 55128 Mainz, Germany}
+\affiliation{Helmholtz Institute Mainz, 55099 Mainz, Germany}
+\affiliation{GSI Helmholtzzentrum für Schwerionenforschung GmbH, 64291 Darmstadt, Germany}
+\affiliation{Department of Physics, University of California, Berkeley, CA 94720-7300, United States of America}
+
+
+\date{September 9, 2026}
+
+\begin{abstract}
+Some common rules for transparent scientific communications in all forms are presented. Following these rules can help avoid the basic but also frequent mistakes.  
+
+\end{abstract}
+
+
+\maketitle
+
+\section{Introduction}
+
+Excellent scientific communication demands excellent understanding of science in the first place, and then demands good communication skills. 
+% Scientific communications take forms of articles, colloquium, keynote speech, elevator chat, and etc. 
+Previous education notes of the authors and the collaborators have covered communication media including article\,\cite{Budker2008writing, Budker_Kimball_2016_collaborative}, poster\,\cite{Budker_Trabesinger_2017_Poster}, and viewgraph\,\cite{Zhang_Budker_2024_viewgraphs}. 
+In this note, we do not focus on a specific form or medium of communications, but highlight some basic rules for communication in general. 
+Each of the rules corresponds to a basic but unfortunately common mistake. 
+
+\section{The rules}
+
+\begin{itemize}
+
+\item \textbf{One thing at a time.} Do not challenge the concentration of the audience. One common mistake is introducing two topics within one viewgraph of a presentation. 
+
+\item \textbf{Good answers are direct.} Who $\rightarrow$ someone; what $\rightarrow$ something; where $\rightarrow$ someplace; when $\rightarrow$ sometime; why $\rightarrow$ some reason; how $\rightarrow$ a description; Yes/no question $\rightarrow$ yes/no. 
+% Start your answer by a short and direct response. 
+
+\item \textbf{Introduce every new element;} Here ``element'' includes theorems, abbreviations, adjectives, and often yourself. 
+The audience's knowledge of the elements is always overestimated. 
+Repeating definitions of new elements is beneficial to 
+\begin{itemize}
+    \item reinforce audience's memory;
+    % \item make sure the audience is synchronized with you;
+    \item slow down the flow of information, which is usually too fast and overwhelming; 
+    \item leave some room for snoozing.
+\end{itemize}
+
+% \item \textbf{People are only smart with numbers smaller than 20.} Do not distract your audience by making them do math in heart. 
+
+\item \textbf{Example helps.} An example is worth a thousand sentences of explanation. 
+
+
+\item \textbf{Highlights are made by contrast.} For example, relative magnitudes are favored over absolute ones in demonstrating improvements. 
+
+% \item \textbf{Left to right / low to high corresponds naturally to small to large.} Better not to invert this relationship.
+
+% \item \textbf{Humans will naturally compare plots with the same $x$- and $y$-axis labels.}
+
+\end{itemize}
+
+
+\section{Concluding remarks}
+
+The rules presented can guarantee transparent communication. 
+Following these rules are not as easy as it seems. 
+Artificial intelligence (AI) can help you check how well your article or speech follows the rules. 
+
+
+% \begin{acknowledgments}
+
+% \end{acknowledgments}
+
+\bibliography{references.bib}% Produces the bibliography via BibTeX.
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******
